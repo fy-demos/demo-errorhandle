@@ -1,4 +1,4 @@
-package com.lomagicode.example.errorhandle.bookstore.web.interceptor;
+package com.lomagicode.example.errorhandle.commons.web.interceptor;
 
 import java.util.UUID;
 

@@ -1,4 +1,4 @@
-package com.lomagicode.example.errorhandle.commons.error;
+package com.lomagicode.example.errorhandle.commons.errorcode;
 
 
 import org.springframework.http.HttpStatus;

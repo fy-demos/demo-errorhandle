@@ -1,4 +1,4 @@
-package com.lomagicode.example.errorhandle.commons.error;
+package com.lomagicode.example.errorhandle.commons.errorcode;
 
 
 import java.util.Objects;
@@ -19,6 +19,8 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 import org.springframework.web.util.WebUtils;
 
 /**
+ * 全局异常处理
+ *
  * Created on Oct 09, 2018
  *
  * @author Chuan Qin

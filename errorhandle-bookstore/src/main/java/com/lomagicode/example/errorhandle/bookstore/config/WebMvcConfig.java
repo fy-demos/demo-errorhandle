@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-import com.lomagicode.example.errorhandle.bookstore.web.interceptor.RequestIdInterceptor;
+import com.lomagicode.example.errorhandle.commons.web.interceptor.RequestIdInterceptor;
 
 /**
  * Created on Oct 09, 2018

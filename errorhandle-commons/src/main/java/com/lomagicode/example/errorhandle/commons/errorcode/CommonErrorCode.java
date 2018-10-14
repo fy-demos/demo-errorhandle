@@ -1,4 +1,4 @@
-package com.lomagicode.example.errorhandle.commons.error;
+package com.lomagicode.example.errorhandle.commons.errorcode;
 
 /**
  * Created on Oct 10, 2018

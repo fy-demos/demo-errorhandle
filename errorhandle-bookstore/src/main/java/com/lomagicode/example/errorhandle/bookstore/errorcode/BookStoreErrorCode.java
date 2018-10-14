@@ -1,7 +1,8 @@
 package com.lomagicode.example.errorhandle.bookstore.errorcode;
 
 
-import com.lomagicode.example.errorhandle.commons.error.ErrorCode;
+import com.lomagicode.example.errorhandle.commons.errorcode.CommonErrorCode;
+import com.lomagicode.example.errorhandle.commons.errorcode.ErrorCode;
 
 /**
  * 模块专属错误码，可以在通用错误码中没有符合场景时，自定义错误码
@@ -9,11 +10,11 @@ import com.lomagicode.example.errorhandle.commons.error.ErrorCode;
  * Created on Oct 10, 2018
  *
  * @author Chuan Qin
- * @see com.lomagicode.example.errorhandle.commons.error.CommonErrorCode#NOT_FOUND
+ * @see CommonErrorCode#NOT_FOUND
  */
 public enum BookStoreErrorCode implements ErrorCode {
     /**
-     * 虽然<strong>不推荐</strong>，但允许在模块中自定义新的错误码，而不去使用通用库中已经定义的 {@link com.lomagicode.example.errorhandle.commons.error.CommonErrorCode#NOT_FOUND} 错误码
+     * 虽然<strong>不推荐</strong>，但允许在模块中自定义新的错误码，而不去使用通用库中已经定义的 {@link CommonErrorCode#NOT_FOUND} 错误码
      */
     NOT_FOUND_BOOK("NotFoundBook", "Book {0} not found."),
 

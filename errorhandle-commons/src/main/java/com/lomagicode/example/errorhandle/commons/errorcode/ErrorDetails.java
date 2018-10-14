@@ -1,4 +1,4 @@
-package com.lomagicode.example.errorhandle.commons.error;
+package com.lomagicode.example.errorhandle.commons.errorcode;
 
 import java.text.MessageFormat;
 import java.time.ZonedDateTime;
@@ -12,6 +12,8 @@ import com.lomagicode.example.errorhandle.commons.constant.WebConsts;
 import lombok.Data;
 
 /**
+ * 错误响应消息体，可根据需要定制
+ *
  * Created on Oct 09, 2018
  *
  * @author Chuan Qin
