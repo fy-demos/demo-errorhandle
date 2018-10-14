@@ -1,4 +1,4 @@
-package com.lomagicode.example.errorhandle.commons.errorcode;
+package com.lomagicode.example.errorhandle.commons.error;
 
 /**
  * 错误码接口，凡各模块错误码枚举类，皆须为此接口的子类型

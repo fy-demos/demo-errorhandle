@@ -8,9 +8,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 import com.google.common.collect.Lists;
-import com.lomagicode.example.errorhandle.commons.errorcode.BusinessException;
+import com.lomagicode.example.errorhandle.commons.error.BusinessException;
 import com.lomagicode.example.errorhandle.bookstore.domain.Book;
-import com.lomagicode.example.errorhandle.commons.errorcode.CommonErrorCode;
+import com.lomagicode.example.errorhandle.commons.error.CommonErrorCode;
 
 /**
  * Created on Oct 10, 2018

@@ -1,8 +1,8 @@
-package com.lomagicode.example.errorhandle.bookstore.errorcode;
+package com.lomagicode.example.errorhandle.bookstore.error;
 
 
-import com.lomagicode.example.errorhandle.commons.errorcode.CommonErrorCode;
-import com.lomagicode.example.errorhandle.commons.errorcode.ErrorCode;
+import com.lomagicode.example.errorhandle.commons.error.CommonErrorCode;
+import com.lomagicode.example.errorhandle.commons.error.ErrorCode;
 
 /**
  * 模块专属错误码，可以在通用错误码中没有符合场景时，自定义错误码
