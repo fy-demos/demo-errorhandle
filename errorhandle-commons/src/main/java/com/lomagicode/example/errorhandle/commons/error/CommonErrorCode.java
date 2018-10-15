@@ -9,11 +9,11 @@ public enum CommonErrorCode implements ErrorCode {
     /**
      * 错误请求
      */
-    INVALID_REQUEST("InvalidRequest", "Invalid request."),
+    INVALID_REQUEST("InvalidRequest", "Invalid request, for reason: {0}"),
     /**
      * 参数验证错误
      */
-    INVALID_ARGUMENT("InvalidArgument", "Invalid argument [{0}], hints: {1}"),
+    INVALID_ARGUMENT("InvalidArgument", "Validation failed for argument [{0}], hints: {1}"),
     /**
      * 未找到资源
      */

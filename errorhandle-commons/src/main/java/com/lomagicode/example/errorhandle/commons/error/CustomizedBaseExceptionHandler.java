@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.lang.Nullable;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -25,10 +26,8 @@ import org.springframework.web.util.WebUtils;
  *
  * @author Chuan Qin
  */
-@ControllerAdvice
-@RestController
-public class CustomizedExceptionHandler extends ResponseEntityExceptionHandler {
-    private static final Logger LOGGER = LoggerFactory.getLogger(CustomizedExceptionHandler.class);
+public class CustomizedBaseExceptionHandler extends ResponseEntityExceptionHandler {
+    private static final Logger LOGGER = LoggerFactory.getLogger(CustomizedBaseExceptionHandler.class);
 
     /**
      * 处理业务异常
@@ -85,7 +84,7 @@ public class CustomizedExceptionHandler extends ResponseEntityExceptionHandler {
         }
         //noinspection ConstantConditions
         if (Objects.isNull(body)) {
-            ErrorDetails details = ErrorDetails.from(CommonErrorCode.INVALID_REQUEST, status, request);
+            ErrorDetails details = ErrorDetails.from(CommonErrorCode.INVALID_REQUEST, status, request, ex.getMessage());
             return new ResponseEntity<>(details, headers, status);
         }
         return new ResponseEntity<>(body, headers, status);
