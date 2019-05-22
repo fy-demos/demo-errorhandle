@@ -1,3 +1,3 @@
-# example-errorhandle
+# blogdemo-errorhandle
 
-Example for error handling in Spring WebMVC projects.
+Blog demo for error handling in Spring WebMVC projects.
